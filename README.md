@@ -23,9 +23,9 @@ Pizza order greets users and asks them how many small and large pizzas they woul
 
 ## Contact
 
-Feel free to email me at liam22campbell@gmail.com
+<p>Feel free to email me at liam22campbell@gmail.com</p>
 
-[Copyright Liam Campbell 2023](LISCENSE.doc)
+<p>[Copyright Liam Campbell 2023](LISCENSE.doc)</p>
 
 This is the Template Repl for C.
 
