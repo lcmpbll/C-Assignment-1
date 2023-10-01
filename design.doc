@@ -1,0 +1,62 @@
+// NOTE: This template is to be used for partner practice ONLY! You must
+// use the required Algorithmic Design Document for all Assignments.
+
+SAMPLE RUN:
+
+Please enter a whole number
+
+===========================================================
+DESIGN:
+
+a) Inputs
+
+user number as a number
+user2 number as a number
+
+-----------------------------------------------------------
+b) Outputs
+
+user number,
+user number squared,
+user number cubed,
+user numbers summed,
+user numbers multiplied
+
+-----------------------------------------------------------
+c) Calculations
+
+user number squared = user number * user number
+user number cubed = user number * user number squared
+users numbers sum = user number + user2 number
+users numbers product = user number * user2 number 
+
+
+
+-----------------------------------------------------------
+d) Pseudocode
+
+DECLARE Integer userNum
+DECLARE Integer userNumSquared
+DECLARE Integer userNumCubed
+DECLARE Integer user2Num
+DECLARE Integer userNumsSum
+DECLARE Integer userNumsProduct
+
+
+DISPLAY "Enter a whole number: "
+INPUT userNum
+
+SET userNumSquared = userNum * userNum
+SET userNumCubed = userNumSquared * userNum
+
+DISPLAY "Your number is ", userNum, "."
+DISPLAY "Your number squared is ", userNumSquared, "."
+DISPLAY "Your number cubed is ", userNumCubed "."
+
+INPUT user2Num
+
+SET userNumsSum = userNum + user2Num
+SET userNumsProduct = userNum * user2Num
+
+DISPLAY "The sum of your numbers is ", userNumsSum, "."
+DISPLAY "The product of your numbers is ", userNumsProduct, "."
