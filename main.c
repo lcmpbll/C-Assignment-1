@@ -1,12 +1,11 @@
-// NOTE: This template is to be used for partner practice ONLY! You must
-// use the required Algorithmic Design Document for all Assignments.
+
 /******************************************************************************
 # Author:           Liam Campbell
-# Lab:              Discussion #1
-# Date:             September 27th, 2023
-# Description:      This program prompts for a number and prints the number, the number squared, and the number cubed.
+# Lab:              Assignment #1
+# Date:             September 30th, 2023
+# Description:      This program prompts the user for the number of small and large pizzas they would like and prints out their totals.
 # Input:            integer number, integer number
-# Output:           integer number, integer number, integer number, integer number
+# Output:           integer number, integer number
 # Sources:          None
 #******************************************************************************/
 #include <stdio.h>
@@ -14,31 +13,34 @@
 
 
 int main(void) {
-  int userNum;
-  int userNumSquared;
-  int userNumCubed;
-  int userNum2;
-  int numbersSummed;
-  int numbersProduct;
+  int numberOfSmallPizzas;
+  int numberOfLargePizzas;
+  int totalNumberOfPizzas;
+  int totalCost;
 
-  printf("Enter a whole number: ");
-  scanf("%d", &userNum);
+  //Welcome
+  printf("Welcome to my online pizza ordering system!\n");
+  
+  // Small pizza order
+  printf("How many small pizzas would you like?\n");
+  scanf("%d", &numberOfSmallPizzas);
+  
+  // Large pizza order
+  printf("How many large pizzas would you like?\n"); 
+  scanf("%d", &numberOfLargePizzas);
+  
+  // Caluclate order totals
+  totalNumberOfPizzas = numberOfLargePizzas + numberOfSmallPizzas;
 
-  userNumSquared = userNum * userNum;
-  userNumCubed = userNum * userNumSquared;
+  totalCost = numberOfSmallPizzas * 5 + numberOfLargePizzas * 9;
 
-  printf("Your number is %d.\n", userNum); 
-  printf("Your number squared is %d.\n", userNumSquared);
-  printf("Your number cubed is %d.\n", userNumCubed);
+  // Confirm order
+  printf("You ordered %d pizzas.\n", totalNumberOfPizzas);
+  printf("Your total is $%d.\n", totalCost);
 
-  printf("Have your friend pick a second number: \n");
-  scanf("%d", &userNum2);
+  //Thanks
 
-  numbersSummed = userNum + userNum2;
-  numbersProduct = userNum * userNum2;
-
-  printf("The sum of your numbers is %d. \n", numbersSummed);
-  printf("The product of your numbers is %d.\n", numbersProduct);
+  printf("Thank you for using my program!\n");
 
   return 0;
 }
